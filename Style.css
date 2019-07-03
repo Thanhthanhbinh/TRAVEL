@@ -1,0 +1,157 @@
+.Head_img {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 100px;
+}
+.Heading {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 100px;
+}
+.SHeading {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+}
+.flex-container {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+}
+.SHead_img {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.Round_img {
+    border-radius: 50%;
+}
+.Fade_img {
+    opacity: 0.5;
+}
+ul {
+    list-style-type: none;
+}
+iframe {
+    overflow: hidden;
+    position: relative;
+    
+}
+.flex-container-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.container-vertical {
+    width: 60px;
+    background-color: whitesmoke;
+    left: 1400px;
+}
+.flex-container-left {
+    align-content: flex-end;
+}
+.navigation {
+    background-color: whitesmoke;
+    height:70px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100% ;
+    align-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-shadow:  0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.footer {
+    background-color: lightgray;
+    display: flex;
+    bottom: 0;
+    width: 100% ;
+    flex-direction: column;
+    align-content: space-between;
+    position: static;
+
+}
+.name {
+    background-color: white;
+    width: 50%;
+    border-bottom: 2px solid black;
+    
+}
+.img_txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.txt-con {
+    display: flex;
+    background-color: gainsboro;
+    flex-direction: column;
+}
+.txt-txt {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.row-con {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content : center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.quizBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: whitesmoke;
+    z-index: 4;
+}
+.slider {
+    margin-bottom: 30px;
+}
+
+.left {
+    left: 0;
+    align-items: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.right {
+    right: 0;
+    align-items: center;
+
+}
+.con {
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+}
+.move-up {
+    z-index: 3;
+}
+a:link {
+    color: initial;
+    text-decoration: none;
+}
+  /* visited link */
+a:visited {
+    color: initial;
+    text-decoration: none;
+
+}
+
+  /* mouse over link */
+a:hover {
+    color: initial;
+    text-decoration: none;
+    
+}
+
+  /* selected link */
+a:active {
+    color: inital;
+    text-decoration: none;
+
+}

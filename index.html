@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <meta charset="8">
+        <!--CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Fugaz+One|Grand+Hotel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Lobster|Maven+Pro&display=swap" rel="stylesheet">
+        
+        <title>Mainpage</title>
+        <script src="re.js"></script>
+    </head>
+    <body onload="load_top()">
+        <!--LOGO VA TÊN TRANG WEB-->
+        <div class="navigation" >
+          <div style="float: left;justify-items: center;">
+          <a href="#" style="font-size: 30px;width: initial;" class="container"><i class="fas fa-map-marked-alt fa-1g"></i> TRAVEL</a>
+          <a  class="btn btn-sm btn-light" href="index.html" role="button" style="margin-bottom:11px;"><i class="fas fa-home"></i> HOME</a>
+          <a class="btn btn-sm btn-light " id="s" href="Quiz - Copy.html" role="button" style="margin-bottom:11px;"><i class="fas fa-file-alt"></i> TAKE QUIZ</a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+        <!--NGĂN CÁCH CHO THOÁNG-->
+        <div style="margin-left: 5%; display: flex; flex-direction: row">
+          <header style="font-size: 60px;" class="Heading" onmouseover="changeGa()" onmouseout="changeG1a()">LOOKING FOR A...</header>
+          <i class="fas fa-search-location fa-3x" style="margin-top: 10px; opacity: 0;" id="G1"></i>
+      </div>
+        <div style="margin-left: 25%;display: flex; flex-direction: row ">
+          <header style="font-size: 70px;font-family: 'Lobster', cursive;" class="Heading" onmouseover="changeGa()" onmouseout="changeG1a()"> ...VACATION DESTINATION? </header>
+          <i class="fas fa-map-marker-alt fa-3x" style="margin-top: 20px; opacity: 0;" id="G2"></i>
+      </div>
+      <!--CONTACT OR SHARE-->
+      <!--<div class="fixed-bottom  btn-group-vertical container-vertical" >
+          <button type="button" class="btn btn-outline-dark " style="width: 60px" data-toggle="collapse" data-target="#collapseEx" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-share-alt"></i></button>
+          <div class="collapse " id="collapseEx">
+          <a class="btn  btn-outline-primary " style="width: 60px" href="https://www.facebook.com/" role="button"><i class="fab fa-facebook-square"></i></a>
+          <a class="btn  btn btn-outline-danger " style="width: 60px" href="https://www.youtube.com/" role="button"><i class="fab fa-youtube"></i></a>
+          <a class="btn  btn-outline-info " style="width: 60px" href="https://twitter.com/" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="btn  btn-outline-danger " style="width: 60px" href="https://www.pinterest.com/" role="button"><i class="fab fa-pinterest"></i></a>
+          <a class="btn  btn-outline-primary " style="width: 60px" href="https://vn.linkedin.com/" role="button"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>-->
+        <!--MỞ ĐẦU TRANG WEB-->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="6000">
+                      <div class="card bg-dark text-white">
+                                <img src="https://i2.wp.com/www.montitravels.com/wp-content/uploads/2019/02/a220-at-gate.jpg?resize=1920%2C400&ssl=1" class="card-img Fade_img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title Heading">WE ARE THE SOLUTION</h5>
+                                  <p class="card-text SHeading">Welcome to our website, here, we can help you determine the most suitable destination for your upcoming vaction. Scroll down further for more information of our website! <i class="far fa-hand-point-down"></i></p>
+                                </div>
+                              </div>
+                            </div>
+                  <div class="carousel-item" data-interval="6000">
+                        <div class="card bg-dark text-white">
+                                <img src="https://ginie.de/wp-content/uploads/gin-aus-england.jpg" class="card-img Fade_img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title Heading">WE ARE THE SOLUTION</h5>
+                                  <p class="card-text SHeading">Chào mừng đến web của chúng tôi, tại đây, tôi sẽ giúp bạn tìm thấy được địa điểm thích hợp nhất cho chuyến đi chơi sắp tới của bạn. Kéo xuống để tìm hiểu thêm thông tin về website của chúng tôi! <i class="far fa-hand-point-down"></i></p>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="carousel-item" data-interval="6000">
+                        <div class="card bg-dark text-white">
+                                <img src="http://first-choice-properties.com/wp-content/uploads/2015/11/default-image.jpg" class="card-img Fade_img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title Heading">WE ARE THE SOLUTION</h5>
+                                  <p class="card-text SHeading">Welcome to our website, here, we can help you determine the most suitable destination for your upcoming vaction. Scroll down further for more information of our website! <i class="far fa-hand-point-down"></i></p>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="carousel-item" data-interval="6000">
+                      <div class="card bg-dark text-white">
+                              <img src="http://macleayvalleycoast.com.au/wp-content/uploads/2013/09/SWR-HSB-beach-400.jpg" class="card-img Fade_img" alt="...">
+                              <div class="card-img-overlay">
+                                <h5 class="card-title Heading">WE ARE THE SOLUTION</h5>
+                                <p class="card-text SHeading">Chào mừng đến web của chúng tôi, tại đây, tôi sẽ giúp bạn tìm thấy được địa điểm thích hợp nhất cho chuyến đi chơi sắp tới của bạn. Kéo xuống để tìm hiểu thêm thông tin về website của chúng tôi! <i class="far fa-hand-point-down"></i></p>
+                              </div>
+                            </div>
+                </div>
+                </div>
+        </div>
+              <!--NGĂN CÁCH CHO THOÁNG-->
+          <div class="container">
+              <p style="text-align: center; font-size: 100px;" class="Heading">!LOOK!</p>
+          </div>
+            <!--DISPLAY ẢNH-->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="2000">
+                            <img src=" https://vignette.wikia.nocookie.net/xmenmovies/images/d/db/XMA_Earth_3.jpeg/revision/latest?cb=20171125132938" class="d-block w-100" alt="Earth">
+                            <div class="flex-container">
+                                    <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?biw=1366&bih=657&ei=PQDqXPy4NoWpoAT3_qegBw&q=earth&oq=earth&gs_l=psy-ab.3..0i67l5j0i203l2j0l3.177677.180748..181289...3.0..5.462.2083.0j10j4-2......0....1..gws-wiz.....6..0i71j35i39j0i131j38j0i10i30j0i5i10i30.ISePSx3LDJk">EARTH</a>
+                            </div>
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                            <img src="https://study-eu.s3.amazonaws.com/uploads/image/path/169/wide_fullhd_Red_square_Moscow_cityscape__8309148721_.jpg" class="d-block w-100" alt="Russia">
+                            <div class="flex-container">
+                                    <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?biw=1366&bih=657&ei=YP_pXOOUG5LM-Qb4wbrwBQ&q=russia&oq=RUS&gs_l=psy-ab.1.0.35i39j0i67l9.216771.217411..219358...2.0..1.452.953.0j4j4-1......0....1..gws-wiz.......0i71j0i131j0j0i20i263.AegZ9QPx4k0">RUSSIA</a>
+                            </div>
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                            <img src="https://cdn.tourradar.com/s3/tour/original/139971_da553565.jpg" class="d-block w-100" alt="England">
+                            <div class="flex-container">
+                                  <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?biw=1366&bih=657&ei=V__pXK6XB8P4hwPutafQDw&q=england&oq=england&gs_l=psy-ab.3..0i67i70i253j0i67j0i203j0i131j0j0i131j0l4.1376.6180..7322...1.0..1.426.1421.0j5j0j1j1......0....1..gws-wiz.....6..0i71j35i39j0i131i67.QHO-6wMbuLI">ENGLAND</a>
+                            </div>
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                            <img src="https://newwebsiteblobs.blob.core.windows.net/destinations/New_York/Main_Slider/TOP4_Statue%20of%20Liberty%20and%20the%20New%20York%20City%20Skyline_Sean%20Pavone_shutterstock.com.jpg" class="d-block w-100" alt="New York">
+                            <div class="flex-container">
+                                    <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?biw=1366&bih=657&ei=9ADqXJjaOIn6-Qb1ia_YBQ&q=new+york&oq=new+york&gs_l=psy-ab.3..0i67l4j0j0i131j0l4.101015.104124..104608...3.0..1.307.1739.0j7j1j2......0....1..gws-wiz.....6..0i71j35i39j35i39i19j0i131i67j0i10i203j0i22i30j38.g2zeh1GQDuk">NEW YORK</a>
+                            </div>
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                          <img src="https://blog.dutyfreelist.com/wp-content/uploads/2018/10/France_1920_800_homepage.jpg" class="d-block w-100" alt="France">
+                          <div class="flex-container">
+                                  <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?q=pARIS&oq=Paris&aqs=chrome.0.69i59j0l5.1434j0j9&sourceid=chrome&ie=UTF-8">PARIS</a>
+                          </div>
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <img src="https://publicholidays.us/wp-content/uploads/2014/01/US_Texas_1920_800_2.jpg" class="d-block w-100"  alt="...">
+                        <div class="flex-container">
+                          <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?ei=F43yXNW9EsLqwQPe3Y2ACg&q=Texas&oq=Texas&gs_l=psy-ab.3..0i67j0i131j0l2j0i131j0j0i203l2j0l2.12274.15402..15740...1.0..3.249.1437.0j8j1......0....1..gws-wiz.....6..0i71j35i39j0i131i67j0i131i20i263.3PsHpgK4exA">TEXAS</a>
+                        </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                      <img src="cropped-harajuku.jpg" class="d-block w-100"  alt="...">
+                      <div class="flex-container">
+                              <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?q=Tokyo&oq=to&aqs=chrome.0.69i59j69i61l3j69i57j69i59.1379j0j7&sourceid=chrome&ie=UTF-8">TOKYO</a>
+                      </div>
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="https://cdn.tourradar.com/s3/tour/original/128259_11b6005a.jpg" class="d-block w-100"  alt="...">
+                    <div class="flex-container">
+                            <a role="button" class="btn btn-outline-light btn-block" href="https://www.google.com/search?q=Hanoi&oq=hanoi&aqs=chrome.0.69i59j69i61l3j0l2.1339j0j9&sourceid=chrome&ie=UTF-8">Hanoi</a>
+                    </div>
+              </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <!--DẪN RA LINK QUIZ-->
+                  <div class="jumbotron">
+                        <h1 class="display-4 Heading">GIVE IT A TRY!</h1>
+                        <p class="lead">From a few questions, we can help you decide where you should visit for the next holiday!</p>
+                        <p style="font-size: 20px">Just CLICK the button bellow to do the quiz.</p>
+                        <hr>
+                        <p class="lead">Qua vài câu hỏi, chúng tôi có thể giúp bạn tìm được địa điểm để tới thăm trong mùa lễ hội tới!</p>
+                        <p style="font-size: 20px">Để làm quiz, hãy CLICK chuột vào nút dưới đây.</p>
+                        <a class="btn btn-outline-dark btn-lg" id="alert" href="Quiz - Copy.html" role="button"><i class="fas fa-file-alt"></i> TAKE QUIZ</a>
+                      </div>
+                <!--NGĂN CÁCH CHO THOÁNG-->
+                    <p style="text-align: center;display: none" class="Heading" id="top"><i class="fas fa-crown"></i> !YOUR CHOICE! <i class="fas fa-crown"></i></p>
+                <!--NHỮNG NƯỚC NỔI TIẾNG ĐƯỢC LỰA CHON-->
+                <div class="card-group" style="margin-left:30px; margin-right:30px; margin-bottom: 20px" >
+                  <div class="card"style="display: none" id="england">
+                    <img src="https://cdn.tourradar.com/s3/tour/original/139971_da553565.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">England</h5>
+                    </div>
+                  </div>
+                  <div class="card"style="display: none" id="new york">
+                    <img src="https://newwebsiteblobs.blob.core.windows.net/destinations/New_York/Main_Slider/TOP4_Statue%20of%20Liberty%20and%20the%20New%20York%20City%20Skyline_Sean%20Pavone_shutterstock.com.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">New York</h5>
+                    </div>
+                  </div>
+                  <div class="card"style="display: none" id="russia">
+                    <img src="https://study-eu.s3.amazonaws.com/uploads/image/path/169/wide_fullhd_Red_square_Moscow_cityscape__8309148721_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Russia</h5>
+                    </div>
+                  </div>
+                  <div class="card"style="display: none" id="hanoi">
+                    <img src="https://cdn.tourradar.com/s3/tour/original/128259_11b6005a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Hanoi</h5>
+                    </div>
+                  </div>
+                  <div class="card"style="display: none" id="paris">
+                    <img src="https://blog.dutyfreelist.com/wp-content/uploads/2018/10/France_1920_800_homepage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Paris</h5>
+                    </div>
+                  </div>
+                  <div class="card"style="display: none" id="tokyo">
+                    <img src="cropped-harajuku.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tokyo</h5>
+                    </div>
+                  </div>
+                  <div class="card" style="display: none" id="texas">
+                    <img src="https://publicholidays.us/wp-content/uploads/2014/01/US_Texas_1920_800_2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Texas</h5>
+                    </div>
+                  </div>
+                  <div class="card" style="display: none">
+                    <img src="https://vignette.wikia.nocookie.net/xmenmovies/images/d/db/XMA_Earth_3.jpeg/revision/latest?cb=20171125132938" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Earht</h5>
+                    </div>
+                  </div>
+                </div>
+                <!--REVIEW-->
+                <p style="text-align: center;" class="Heading" id="top_1"><i class="fas fa-star"></i> !REVIEW! <i class="fas fa-star"></i></p>
+
+    <div id="block">
+<button type="button" id="review" onclick="change()" class="btn btn-outline-dark btn-block" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-chevron-down"></i></button>
+    <div class="txt-con" >
+        <div class="container">
+    <div class="collapse" id="collapseExample">
+        <p class="Heading" style="text-align: center">!RATE US!</p>
+        <input class="form-control form-control-lg" type="text" placeholder="Name" id="Name" onchange="add1()">
+        <div class="btn-group flex-container" role="group" aria-label="Basic example">
+            <button type="radio" class="btn btn-outline-success" onclick="good()" id="Good"><i class="fas fa-thumbs-up"></i></button>
+            <button type="radio" class="btn btn-outline-warning" onclick="ok()" id="OK" >OK</button>
+            <button type="radio" class="btn btn-outline-danger" onclick="bad()" id="Bad"><i class="fas fa-thumbs-down"></i></button>
+        </div>
+        <div class="form-group" >
+<textarea class="form-control" onchange="add2()" id="exampleFormControlTextarea1" type="text" placeholder="Comment"></textarea>
+        </div>
+        <div class="flex-container">
+            <button type="button" onclick="confirm()" class="btn btn-outline-dark" style="margin-bottom: 20px">SUMMIT</button>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+    <!--SHOW COMMENT-->
+<p class="Heading" style="text-align: center; display:none;" id="block-show">!THANK YOU!</p>
+<button type="radio" class="btn btn-light btn-block" onclick="quiz_selection()"  >COMMENTS</button>
+<div style="display: flex; flex-direction:column; flex-flow:wrap; justify-content:center">
+  <div style="display: flex; flex-direction:column; flex-flow:wrap; justify-content:center;">
+    <h1 class="comment_d Heading"></h1>
+    <p class="name_d SHeading"></p>
+  </div>
+  <div style="display: flex; flex-direction:column; flex-flow:wrap; justify-content:center;margin-left: 50px">
+    <h1 class="comment_d Heading"></h1>
+    <p class="name_d SHeading"></p>
+  </div>
+  <div style="display: flex; flex-direction:column; flex-flow:wrap; justify-content:center;margin-left: 50px">
+    <h1 class="comment_d Heading"></h1>
+    <p class="name_d SHeading"></p>
+  </div>
+  <div style="display: flex; flex-direction:column; flex-flow:wrap; justify-content:center;margin-left: 50px">
+    <h1 class="comment_d Heading"></h1>
+    <p class="name_d SHeading"></p>
+  </div>
+</div>
+    <!--JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    <footer>
+      <!--FOOTER-->
+      <div class="footer">
+          <div style="align-self: center; margin-top: 5px;">
+              <span class="Heading" style="font-size: 40px">MADE BY :</span>
+          </div>
+          <div style="align-self: center" class="name">
+              <a href="#" style="font-size:20px ;width: initial" class="container">NAME1</a>
+          </div>
+          <div style="align-self: center" class="name">
+              <a href="#" style="font-size:20px ;width: initial" class="container">NAME2</a>
+          </div>
+          <div style="align-self: center" class="name">
+              <a href="#" style="font-size:20px ;width: initial" class="container">NAME2</a>
+          </div>
+          <div class="row-con">
+              <a  class="btn btn-sm btn-outline-info" href="https://www.facebook.com/" role="button"  ><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a  class="btn btn-sm btn-outline-danger" href="https://www.youtube.com/" role="button" style="margin-left: 30px"><i class="fab fa-youtube fa-2x"></i></a>
+              <a  class="btn btn-sm btn-outline-primary" href="https://twitter.com/" role="button" style="margin-left: 30px"><i class="fab fa-twitter fa-2x"></i></a>
+  
+          </div>
+      </div>
+      </footer>
+</html>

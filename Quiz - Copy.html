@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta charset="8">
+        <!--CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Fugaz+One|Grand+Hotel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>Quiz</title>
+        <script src="re.js"></script>
+        <script> 
+        var ratings=[0,0,0,0,0,0];
+        var time=[];
+ var i=0;
+ var heart_times=2;
+        </script>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <div class="navigation" >
+            <div style="float: left;justify-items: center;">
+                <a href="#" style="font-size: 30px;width: initial;" class="container"><i class="fas fa-map-marked-alt fa-1g"></i> TRAVEL</a>
+                <a  class="btn btn-sm btn-light" href="index.html" role="button" style="margin-bottom:11px;"><i class="fas fa-home"></i> HOME</a>
+                <a class="btn btn-sm btn-light " id="s" href="Quiz - Copy.html" role="button" style="margin-bottom:11px;"><i class="fas fa-file-alt"></i> TAKE QUIZ</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--CACH RA CHO THOANG-->
+        <div class="container">
+            <p style="text-align: center; font-size: 90px;" class="Heading">!START! </p>
+        </div>
+        <!--QUIZ-->
+        <div class="quizBox">
+            <header class="Heading" style="font-size: 50px;display:flex;align-content: flex-start; flex-direction:column; margin-left: 5px; display: inline-block;">FIRST QUESTION: <i class="far fa-calendar-check"></i></header>
+            <div class="flex-container">
+                <header class="SHeading" style="margin-left: 30px">How long are you expected to travel?</header>
+            </div>
+            <div class="row-con" style="background-color: whitesmoke;">
+                <button type="radio" class="btn btn-outline-success" style="margin-left: 30px" onclick="d_long()"> LONG </button>
+                <button type="radio" class="btn btn-outline-warning" style="margin-left: 30px" onclick="d_med()"> MEDIUM </button>
+                <button type="radio" class="btn btn-outline-danger" style="margin-left: 30px" onclick="d_short()"> SHORT </button>
+            </div>
+            <header class="Heading" style="font-size: 50px;display:flex;align-content: flex-start; flex-direction:column; margin-left: 5px;display: inline-block; ">SECOND QUESTION: <i class="fas fa-comment-dollar"></i></header>
+            <div class="flex-container">
+                <header class="SHeading" style="margin-left: 30px">How much are you expected to spend?</header>
+            </div>
+            <div class="row-con" style="background-color: whitesmoke;">
+                <button type="radio" class="btn btn-outline-success" style="margin-left: 30px" onclick="m_long()"> VERY MUCH </button>
+                <button type="radio" class="btn btn-outline-warning" style="margin-left: 30px" onclick="m_med()"> MEDIUM </button>
+                <button type="radio" class="btn btn-outline-danger" style="margin-left: 30px" onclick="m_short()"> VERY LITTLE </button>
+            </div>
+            <header class="Heading" style="font-size: 50px;display:flex;align-content: flex-start; flex-direction:column; margin-left: 5px;display: inline-block ">THIRD QUESTION: <i class="fas fa-users"></i></header>
+            <div class="flex-container">
+                <header class="SHeading" style="margin-left: 30px">How many people are you expected to travel with?</header>
+            </div>
+            <div class="row-con" style="background-color: whitesmoke;">
+                <button type="radio" class="btn btn-outline-success" style="margin-left: 30px" onclick="p_long()"> MANY PALS </button>
+                <button type="radio" class="btn btn-outline-warning" style="margin-left: 30px" onclick="p_med()"> A FEW </button>
+                <button type="radio" class="btn btn-outline-danger" style="margin-left: 30px" onclick="p_short()"> ONLY ME </button>
+            </div>
+            <a role="button" class="btn btn-light row-con" href="Result.html" onclick="quiz_re()" > SUMMIT </a>
+        </div>
+        <!--CACH RA CHO THOANG-->
+        <div class="container">
+            <p style="text-align: center; font-size: 80px;" class="Heading" style="display:flex; flex-direction: row"><i class="fab fa-gratipay"></i> ?ANY PERFERENCES? <i class="fab fa-gratipay"></i></p>
+        </div>
+        <!--DISPLAY ẢNH-->
+        <div class="slider" style="display: flex; justify-content:center;">
+            <i class="fas fa-chevron-left fa-3x" onmouseover="Larrows_h()" onmouseout="Larrows_u()" id="left-a" style="align-self: center; margin-left: 20px; opacity: 0.1;" onmousedown="slideL()"></i>
+            <img id="img" src="https://c.ststat.net/content/EntImg/HomepageModule/-1930530097-300x300.jpg" onmouseover="opacityC()" onmouseout="opacityD()" class="round_img center slide">
+            <i role="button" class="far fa-heart center fa-5x move-up" style="position: absolute; align-self: center; display: none" id="heart" onmousedown="changeG()" onmouseover="opacityC()" onmouseout="opacityD()"></i>
+            <i role="button" class="fas fa-heart center fa-5x move-up" style="position: absolute; align-self: center; display:none" id="heart1" onmousedown="changeG1()" onmouseover="opacityC()" onmouseout="opacityD()" ></i>
+            <img id="img" src="https://www.area-codes.org.uk/international/images/russia.jpg" onmouseover="opacityC()" onmouseout="opacityD()" class="round_img center slide" style="display:none">
+            <img id="img" src="https://cdn.24.co.za/files/Cms/General/d/7234/0923135b82774fa6a12422e7feffb97e.jpg" onmouseover="opacityC()" onmouseout="opacityD()" class="round_img center slide" style="display:none">
+            <img id="img" src="https://mobileimg.priceline.com/htlimg/3143/3143405/thumbnail-300-square.jpg" onmouseover="opacityC()" onmouseout="opacityD()" class="round_img center slide" style="display:none">
+            <img id="img" src="http://www.noibaiairporthotel.net/wp-content/uploads/2015/04/Hanoi-the-huc-bridge-300x300.jpg" onmouseover="opacityC()" onmouseout="opacityD()" class="round_img center slide" style="display:none">
+            <img id="img" src="https://glenvisaservices.com/wp-content/uploads/2018/05/france-side-2.jpg" onmouseover="opacityC()" onmouseout="opacityD()" class="round_img center slide" style="display:none">
+
+            <i class="fas fa-chevron-right right fa-3x" onmouseover="Rarrows_h()" onmouseout="Rarrows_u()" id="right-a" style="align-self: center;margin-right: 20px; opacity: 0.1;" onmousedown="slideR()"></i>            
+        
+        </div>
+    </body>
+    <footer>
+        <!--FOOTER-->
+        <div class="footer" style="left:0; right:0">
+            <div style="align-self: center; margin-top: 5px;">
+                <span class="Heading" style="font-size: 40px">MADE BY :</span>
+            </div>
+            <div style="align-self: center" class="name">
+                <a href="#" style="font-size:20px ;width: initial" class="container">NAME1</a>
+            </div>
+            <div style="align-self: center" class="name">
+                <a href="#" style="font-size:20px ;width: initial" class="container">NAME2</a>
+            </div>
+            <div style="align-self: center" class="name">
+                <a href="#" style="font-size:20px ;width: initial" class="container">NAME2</a>
+            </div>
+            <div class="row-con">
+                <a  class="btn btn-sm btn-outline-info" href="https://www.facebook.com/" role="button"  ><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a  class="btn btn-sm btn-outline-danger" href="https://www.youtube.com/" role="button" style="margin-left: 30px"><i class="fab fa-youtube fa-2x"></i></a>
+                <a  class="btn btn-sm btn-outline-primary" href="https://twitter.com/" role="button" style="margin-left: 30px"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
