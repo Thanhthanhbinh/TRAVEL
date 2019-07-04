@@ -437,6 +437,10 @@ function nothing() {
   document.getElementById('new york-r').style.display="none";
     document.getElementById('top').style.display="none";
     document.getElementById('top_1').style.display="block";
+    document.getElementById('home-r').style.display="none";
+    document.getElementById('hanoi-r').style.display="none";
+
+
   
 
 
@@ -444,22 +448,47 @@ function nothing() {
 }
 function show_re() {
   ii = JSON.parse(localStorage.getItem("ii"));
-  
+  document.getElementById('tokyo-r').style.display="none";
+  document.getElementById('england-r').style.display="none";
+  document.getElementById('new york-r').style.display="none";
+  document.getElementById('home-r').style.display="none";
+  document.getElementById('hanoi-r').style.display="none";
   switch (ii) {
     case 0:
       document.getElementById('tokyo-r').style.display="block";
+      document.getElementById('england-r').style.display="none";
+      document.getElementById('new york-r').style.display="none";
+      document.getElementById('home-r').style.display="none";
+      document.getElementById('hanoi-r').style.display="none";
       break;
       case 1:
         document.getElementById('england-r').style.display="block";
+        document.getElementById('new york-r').style.display="none";
+        document.getElementById('home-r').style.display="none";
+        document.getElementById('hanoi-r').style.display="none";
+        document.getElementById('tokyo-r').style.display="none";
         break;
         case 2:
           document.getElementById('new york-r').style.display="block";
+          document.getElementById('home-r').style.display="none";
+          document.getElementById('hanoi-r').style.display="none";
+          document.getElementById('tokyo-r').style.display="none";
+          document.getElementById('england-r').style.display="none";
           break;
           case 3:
               document.getElementById('hanoi-r').style.display="block";
+              document.getElementById('tokyo-r').style.display="none";
+              document.getElementById('england-r').style.display="none";
+              document.getElementById('new york-r').style.display="block";
+              document.getElementById('home-r').style.display="none";
+              break;
               case 4:
                   document.getElementById('home-r').style.display="block";
-
+                  document.getElementById('hanoi-r').style.display="none";
+                  document.getElementById('tokyo-r').style.display="none";
+                  document.getElementById('england-r').style.display="none";
+                  document.getElementById('new york-r').style.display="block";
+break;
                 
 
   }
