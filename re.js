@@ -53,7 +53,7 @@ function confirm(){
     rate:rate,
   };
   var arr= JSON.parse(localStorage.getItem("comments"));
-  if (arr!=null) {
+  if (arr!=undefined) {
   arr.push(obj);
   window.localStorage.setItem("comments",JSON.stringify(arr));
   } else {
