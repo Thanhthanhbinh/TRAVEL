@@ -479,7 +479,7 @@ function show_re() {
               document.getElementById('hanoi-r').style.display="block";
               document.getElementById('tokyo-r').style.display="none";
               document.getElementById('england-r').style.display="none";
-              document.getElementById('new york-r').style.display="block";
+              document.getElementById('new york-r').style.display="none";
               document.getElementById('home-r').style.display="none";
               break;
               case 4:
@@ -487,7 +487,7 @@ function show_re() {
                   document.getElementById('hanoi-r').style.display="none";
                   document.getElementById('tokyo-r').style.display="none";
                   document.getElementById('england-r').style.display="none";
-                  document.getElementById('new york-r').style.display="block";
+                  document.getElementById('new york-r').style.display="none";
 break;
                 
 
