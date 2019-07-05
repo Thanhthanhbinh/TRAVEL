@@ -15,7 +15,7 @@ var japan=[0,0,0];
 var london=[0,0,0];
 var new_y=[0,0,0];
 
-if (typeof(Storage) == "undefined") {
+if (!("comments" in localStorage)) {
   arr=[];
   window.localStorage.setItem("comments",JSON.stringify(arr));
 };
