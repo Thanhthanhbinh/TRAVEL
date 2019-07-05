@@ -1,7 +1,6 @@
 
 
-var arr=[];
-var test=0;
+  var test=0;
 var once=0;
 var inp="";
 var inp1="";
@@ -16,7 +15,10 @@ var japan=[0,0,0];
 var london=[0,0,0];
 var new_y=[0,0,0];
 
-
+if (typeof(Storage) == "undefined") {
+  arr=[];
+  window.localStorage.setItem("comments",JSON.stringify(arr));
+};
 function add1(){
   inp=document.getElementById("Name").value;
   test=test+2;
@@ -47,20 +49,16 @@ function confirm(){
   var block1=document.getElementById("block-show");
   block1.style.display="block";
   test=0;
+  once=0;
   var obj={
     name:inp,
     comment:inp1,
     rate:rate,
   };
   var arr= JSON.parse(localStorage.getItem("comments"));
-  if (arr!=undefined) {
   arr.push(obj);
   window.localStorage.setItem("comments",JSON.stringify(arr));
-  } else {
-    arr=[];
-    arr.push(obj);
-    window.localStorage.setItem("comments",JSON.stringify(arr));
-  }
+ 
   
 }else{
   alert("NO INFROMATION");
