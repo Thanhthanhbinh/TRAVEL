@@ -58,8 +58,6 @@ function confirm(){
   var arr= JSON.parse(localStorage.getItem("comments"));
   arr.push(obj);
   window.localStorage.setItem("comments",JSON.stringify(arr));
- 
-  
 }else{
   alert("NO INFROMATION");
 };
